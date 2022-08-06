@@ -1,0 +1,26 @@
+* Requisitos previos
+
+instalación de Visual Studio Code o proyecto que estemos realizando este es un pequeño ejemplo:
+
+Asegúrese de haber instalado la versión más reciente de Visual Studio Code y de haber cargado
+la extensión mssql. Para instrucciones sobre cómo instalar la extensión mssql, consulte Instalación
+de Visual Studio Code y mssql para Visual Studio Code.
+
+Configuración del modo de idioma en SQL
+en este caso usaremos sql pero ustedes puesen utilizar el que gusten.
+
+*/---------------------
+Consultar datos
+Ejecute la siguiente instrucción Transact-SQL SELECT para consultar los 20 primeros productos por categoría.
+
+SQL
+
+Copiar
+SELECT pc.Name as CategoryName, p.name as ProductName
+FROM [SalesLT].[ProductCategory] pc
+JOIN [SalesLT].[Product] p
+ON pc.productcategoryid = p.productcategoryid;
+*-------------------------
+
+
+este es solo una pequeña guia..
